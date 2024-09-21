@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/public/css/bootstrap.min.css">
+    <title>Login</title>
+  </head>
+  <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+	  <div class="container-fluid">
+		  <a class="navbar-brand" href="/">Health & Fitness</a>
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarNav">
+			  <ul class="navbar-nav ms-auto">
+				  <li class="nav-item">
+					  <a class="nav-link" href="/login">Login</a>
+				  </li>
+				  <li class="nav-item">
+					  <a class="nav-link" href="/register">Register</a>
+				  </li>
+			  </ul>
+		  </div>
+	  </div>
+  </nav>
+  	<div class="text-center">
+  		<h1 class="display-1 mt-5">Health & Fitness Expert System</h1>
+  	</div>    
+	<div class="container py-5 h-100">
+		<div class="row d-flex justify-content-center align-items-center h-100">
+      		<div class="col-12 col-md-8 col-lg-6 col-xl-5">
+				<div class="card shadow-2-strong" style="border-radius: 1rem;">
+					<div class="card-body p-5 text-center">
+						<form id="loginForm" action="javascript:onLogin()">
+
+							<div class="mb-3">
+								<label for="name" class="form-label">Username</label>
+								<input type="text" class="form-control" id="name" name="name" autofocus required>
+							</div>
+							<div class="mb-3">
+								<label for="password" class="form-label">Password</label>
+								<input type="password" class="form-control" id="password" name="password" required>
+							</div>
+							<div class="mb-3">
+								<a href="/register">Register a new account</a>
+							</div>
+							<button type="submit" class="btn btn-primary">Login</button>
+							</form>
+					</div>
+				</div>
+				<div id="status-message" class="text-center mt-3">
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="/public/js/bootstrap.bundle.min.js"></script>
+    <script src="/public/js/login.js"></script>
+    <script src="/public/js/commons.js"></script>
+  </body>
+</html>

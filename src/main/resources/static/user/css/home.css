@@ -1,0 +1,22 @@
+.icon-red {
+	color: red;
+}
+
+.icon-grey {
+	color: grey;
+}
+
+.icon-green {
+	color: green;
+}
+
+.icon-orange {
+	color: orange;
+}
+
+@media (max-width: 1080px) {
+.navbar-collapse
+    {        
+        text-align: center;
+    }
+}
